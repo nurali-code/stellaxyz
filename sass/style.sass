@@ -321,14 +321,49 @@
 
 .m
     &-1
-        animation: m1 8s linear infinite
+        animation: m1 7s linear infinite
     &-3
         opacity: 0
-        animation: m3 8s linear infinite
-        animation-delay: 6s
+        animation: m3 7s linear infinite
+        animation-delay: 5s
 
 .rocet
-    animation: rocet 8s linear infinite 
+    animation: rocet 7s linear infinite
+
+.mw
+    &-1
+        // transform: translate(868px, 623px)
+        animation: mw1 7s linear infinite
+    &-2
+        animation: mw2 7s linear infinite
+    &-3
+        animation: mw3 4s linear infinite
+    &-4
+        animation: mw4 4s linear infinite
+
+@keyframes mw4
+    0%
+        transform: translate(1070px, 916px)
+    100%
+        transform: translate(1700px, 916px)
+
+@keyframes mw3
+    0%
+        transform: translate(1700px, 916px)
+    100%
+        transform: translate(2370px, 916px)
+
+@keyframes mw1
+    0%
+        transform: translate(900px, 623px)
+    100%
+        transform: translate(-422px, 623px)
+
+@keyframes mw2
+    0%
+        transform: translate(2200px, 623px)
+    100%
+        transform: translate(900px, 623px)
 
 @keyframes rocet
     0%, 60%, 100%
@@ -371,6 +406,10 @@
     100%
         opacity: .5
 
+.cos
+    animation: austrHead .6s linear infinite alternate
+    transform-origin: 38% 64%
+
 .austrHand
     animation: austrHand .2s linear infinite alternate
     transform-origin: 36% 62%
@@ -380,6 +419,7 @@
 .austrHead
     animation: austrHead .3s linear infinite alternate
     transform-origin: 35% 35%
+
 .tonel
     animation: tonel 7s linear infinite
 
