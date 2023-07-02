@@ -292,7 +292,7 @@
             max-width: 82%
             transition: all 0.4s ease
             transition-property: transform
-   
+
     &-wrap
         justify-content: flex-start
         align-items: flex-start
@@ -319,11 +319,47 @@
         p
             text-decoration-color: white
 
+.m
+    &-1
+        animation: m1 8s linear infinite
+    &-3
+        opacity: 0
+        animation: m3 8s linear infinite
+        animation-delay: 6s
+
+.rocet
+    animation: rocet 8s linear infinite 
+
+@keyframes rocet
+    0%, 60%, 100%
+        transform: translate(344px, 60px)
+    30%
+        transform: translate(344px, -1540px)
+
+@keyframes m1
+    0%
+        opacity: 1
+        transform: translate(2200px, 624px)
+    94%
+        opacity: 1
+    100%
+        opacity: 0
+        transform: translate(600px, 624px)
+
+@keyframes m3
+    0%
+        transform: translate(653px, 955px)
+        opacity: 1
+    100%
+        transform: translate(2295px, 955px)
+        opacity: 1
+
 @keyframes animCoins
     0%
         transform: translateX(-48px)
     100%
         transform: translateX(119px)
+
 @keyframes mainStar
     0%
         opacity: 1
